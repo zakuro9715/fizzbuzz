@@ -1,3 +1,2 @@
-#include<iostream>
-#define O(x,y)x?std::cout<<y:0;
-int main(){for(int i=0;i<101;){O(++i%3&&i%5,i)O(!(i%3),"Fizz")O(!(i%5),"Buzz")O(1," ")}}
+#include<cstdio>
+int main(int i){i%3&&i%5&&printf("%d",i);printf("Fizz%s "+!!(i%3)*4,"Buzz"+!!(i%5)*4),i<100&&main(i+1);}
